@@ -53,7 +53,7 @@ exports.register = async (req, res, next)=>{
           html: `
            <h4>Hi ${newUser.firstName} ${newUser.lastName}</h4>
            <p>
-           Welcome to preeminentcryptotrade, your Number 1 online trading platform.
+           Welcome to Pro-TradeAssets, your Number 1 online trading platform.
 
             Your Trading account has been set up successfully with login details:
 
@@ -64,14 +64,16 @@ exports.register = async (req, res, next)=>{
 
             Deposit through Bitcoin.
 
-            For more enquiry kindly contact your account manager or write directly with our live chat support on our platform or you can send a direct mail to us at support@preeminentcryptotrade.com.
+            For more enquiry kindly contact your account manager or write directly with our live chat support on our platform or you can send a direct mail to us at protradeassets@gmail.com.
 
             Thank You for choosing our platform and we wish you a successful trading.
 
-            preeminentcryptotrade TEAM (C)
+            Pro-TradeAssets TEAM (C)
            </p>
             `,
         }
+
+        console.log(mailOptions)
   
          const mailOptionsme ={
             from: process.env.USER,
@@ -139,7 +141,7 @@ exports.login = async (req, res, next)=>{
           html: `
            <h4>Dear ${Users.firstName} ${Users.lastName}</h4>
            <p>Welcome back!</p>
-           <p> You have logged in successfully to Preeminentcryptotrade</p>
+           <p> You have logged in successfully to Pro-TradeAssets</p>
            <p>If you did not initiate this, change your password immediately and send our Customer Center an email to <br/> ${process.env.USER}
            </p>
            <p>Why send this email? We take security very seriously and we want to keep you in the loop of activities on your account.</p>
